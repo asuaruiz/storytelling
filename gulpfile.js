@@ -9,6 +9,24 @@ var stylus = require('gulp-stylus');
 var plumber = require('gulp-plumber');
 var webserver = require('gulp-webserver');
 var opn = require('opn');
+var bsConfig = require("gulp-bootstrap-configurator");
+
+/******************************************************************************/
+// For CSS 
+gulp.task('make-bootstrap-css', function(){
+  return gulp.src("./config.json")
+    .pipe(bsConfig.css())
+    .pipe(gulp.dest("./assets"));
+    // It will create `bootstrap.css` in directory `assets`. 
+});
+ 
+// For JS 
+gulp.task('make-bootstrap-js', function(){
+  return gulp.src("./config.json")
+    .pipe(bsConfig.js())
+    .pipe(gulp.dest("./assets"));
+    // It will create `bootstrap.js` in directory `assets`. 
+});
 
 /*******************************************************************************
  *  Configurations
@@ -99,3 +117,7 @@ gulp.task('watch', function() {
  */
 gulp.task('build', ['templates', 'styles', 'scripts']);
 gulp.task('default', ['build', 'webserver', 'watch', 'openbrowser']);
+
+
+
+ 

@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.8.10",
+    "gulp-bootstrap-configurator": "^0.4.1",
     "gulp-jade": "^0.11.0",
     "gulp-plumber": "^0.6.6",
     "gulp-rename": "^1.2.0",
