@@ -1,0 +1,40 @@
+{
+  "name": "bootstrap-jade-stylus-gulp-boilerplate",
+  "version": "0.0.1",
+  "description": "A minimal seed comprising of Bootstrap, Jade, Stylus, Gulp and some basic imports, like Google Webfonts, FontAwesome, etc.",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jade": "^0.11.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-stylus": "^2.0.0",
+    "gulp-util": "^3.0.2",
+    "gulp-webserver": "^0.9.0",
+    "opn": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FarhadG/bootstrap-jade-stylus-gulp-boilerplate.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "jade",
+    "stylus",
+    "gulp",
+    "boilerplate",
+    "seed"
+  ],
+  "author": "Farhad Ghayour",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FarhadG/bootstrap-jade-stylus-gulp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/FarhadG/bootstrap-jade-stylus-gulp-boilerplate"
+}
