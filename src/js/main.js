@@ -1,20 +1,39 @@
 console.log('So are the script files!!!');
-//$('h4').hide();
-/*$(window).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 800) {
-        $('h4').fadeIn();
-    } else {
-        $('h4').fadeOut();
-    }
 
-});*/
-//$("#hide").hide();
 $(window).scroll(function() {
-    if ($(window).scrollTop() > 100) {
-        $("#hide").fadeIn("slow");
+    if ($(document).scrollTop() > 50) {
+      $(".s1").fadeIn();
+    } else {
+      $(".s1").fadeOut();
     }
-    else {
-        $("#hide").fadeOut("fast");
+    if ($(document).scrollTop() > 100) {
+      $(".s2").fadeIn();
+    } else {
+      $(".s2").fadeOut();
     }
-});
+    if ($(document).scrollTop() > 200) {
+      $(".s3").fadeIn();
+    } else {
+      $(".s3").fadeOut();
+    }
+    if ($(document).scrollTop() > 300) {
+      $(".s4").fadeIn();
+    } else {
+      $(".s4").fadeOut();
+    }
+    if ($(document).scrollTop() > 400) {
+      $(".s5").fadeIn();
+    } else {
+      $(".s5").fadeOut();
+    }
+    if ($(document).scrollTop() > 500) {
+      $(".s6").fadeIn();
+    } else {
+      $(".s6").fadeOut();
+    }
+    if ($(document).scrollTop() > 600) {
+      $(".s7").fadeIn();
+    } else {
+      $(".s7").fadeOut();
+    }
+  });
